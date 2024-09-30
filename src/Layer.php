@@ -6,14 +6,15 @@ namespace Pest\Arch;
 
 use IteratorAggregate;
 use PHPUnit\Architecture\Elements\Layer\Layer as BaseLayer;
-use PHPUnit\Architecture\Elements\Layer\LayerLeave;
 use PHPUnit\Architecture\Elements\ObjectDescription;
 use Traversable;
 
 /**
  * @method Layer assertDoesNotDependOn(string ...$objects)
  * @method Layer excludeByNameStart(string $name)
- * @mixin LayerLeave
+ * @method Layer exclude(callable $callback)
+ * @method Layer leaveByNameRegex(string $name)
+ * @method Layer leaveByNameStart(string $name)
  *
  * @implements IteratorAggregate<int, ObjectDescription>
  */
