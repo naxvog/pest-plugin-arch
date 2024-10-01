@@ -32,7 +32,7 @@ jobs:
 
     - name: Modify composer.json
       run: >
-        jq '.name |= "pestphp/pest-plugin-arch-dev" | . += {"replace":{"pestphp/pest-plugin-arch": "*"}}' composer.json > composer.json.tmp
+        jq '. += {"replace":{(.name): "*"}} | .name = (.name + "-dev")' composer.json > composer.json.tmp
         && mv composer.json.tmp composer.json
 
     - name: Install PHP dependencies
