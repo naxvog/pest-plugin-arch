@@ -11,7 +11,7 @@ use ReflectionFunction;
 /**
  * @internal
  */
-final class FunctionDescription extends ObjectDescription // @phpstan-ignore-line
+final class FunctionDescription extends ObjectDescription
 {
     /**
      * {@inheritDoc}
