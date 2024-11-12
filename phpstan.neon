@@ -12,5 +12,3 @@ parameters:
     reportUnmatchedIgnoredErrors: true
 
     ignoreErrors:
-        - "#has a nullable return type declaration.#"
-        - "# with a nullable type declaration.#"
