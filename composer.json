@@ -1,5 +1,5 @@
 {
-    "name": "pestphp/pest-plugin-arch",
+    "name": "naxvog/pest-plugin-arch",
     "description": "The Arch plugin for Pest PHP.",
     "keywords": [
         "php",
@@ -38,6 +38,9 @@
     "require-dev": {
         "pestphp/pest": "^3.2.4",
         "pestphp/pest-dev-tools": "^3.0.0"
+    },
+    "replace": {
+        "pestphp/pest-plugin-arch": "^3"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
